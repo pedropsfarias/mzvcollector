@@ -11,5 +11,22 @@
     "ecosystem:cordova"
   ],
   "author": "Apache Cordova Team",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@appcominteractive/cordova-plugin-hot-reload": "^0.2.4",
+    "cordova-browser": "^6.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "@appcominteractive/cordova-plugin-hot-reload": {}
+    }
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "cross-env": "^7.0.3",
+    "wait-on": "^6.0.1"
+  }
 }
