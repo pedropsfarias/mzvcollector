@@ -14,14 +14,18 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@appcominteractive/cordova-plugin-hot-reload": "^0.2.4",
-    "cordova-browser": "^6.0.0"
+    "cordova-android": "^10.1.2",
+    "cordova-browser": "^6.0.0",
+    "cordova-sqlite-storage": "^6.0.0"
   },
   "cordova": {
     "platforms": [
-      "browser"
+      "browser",
+      "android"
     ],
     "plugins": {
-      "@appcominteractive/cordova-plugin-hot-reload": {}
+      "@appcominteractive/cordova-plugin-hot-reload": {},
+      "cordova-sqlite-storage": {}
     }
   },
   "dependencies": {
